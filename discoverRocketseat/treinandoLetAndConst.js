@@ -17,4 +17,4 @@ let y = 0;
       const t = "sim"
 }
 console.log("> existe y? ", y);
-console.log("> const funciona fora do escopo em q foi criado? ", t);
+console.log("> const funciona fora do escopo em q foi criado? ", t); // erro
