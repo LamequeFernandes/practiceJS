@@ -1,3 +1,3 @@
 # practiceJS
 
-praticando JavaScript
+praticando JavaScript.
