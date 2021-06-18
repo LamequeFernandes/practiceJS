@@ -1,1 +1,9 @@
 * O Escopo determina a visibilidade de uma determinada variavel no JS
+ 
+ {
+    exemplo de Escopo.
+ }
+
+- var é global e podera funcionar fora de um escopo de bloco.: evitar usar
+- const é constante e n pode ser alterado fora do escopo.
+- let pode ser modificado, porem, apenas em seu escopo.
