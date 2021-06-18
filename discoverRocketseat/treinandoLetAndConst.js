@@ -14,5 +14,7 @@ let y = 0;
 {
       y = 1; // penas funciona no escopo, local
       console.log("> existe y? ", y);
+      const t = "sim"
 }
 console.log("> existe y? ", y);
+console.log("> const funciona fora do escopo em q foi criado? ", t);
