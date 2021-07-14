@@ -1,16 +1,12 @@
 function retornaFrase(imc) {
-   if (imc < 18.5)
-      return "(Abaixo do peso)";
-   else if (imc => 18.5 && imc <= 24,9)
-      return "(Peso normal)";
-   else if (imc => 25 && imc <= 29,9)
-      return "(Sobrepeso)";
-   else if (imc => 30 && imc <= 34,9)
-      return "(Obesidade grau 1)";
-   else if (imc => 35 && imc <= 39,9)
-      return "(Obesidade grau 2)";
-   else if (imc >= 40)
-      return "(Obesidade grau 3)";
+   const nivel = ["(Abaixo do peso)", "(Peso normal)", "(Sobrepeso)", "(Obesidade grau 1)", "(Obesidade grau 2)", "(Obesidade grau 3)"];
+
+   if (imc >= 39.9) return nivel[5];
+   if (imc >= 34.9) return nivel[4];
+   if (imc >= 29.9) return nivel[3];
+   if (imc >= 24.9) return nivel[2];
+   if (imc >= 18.5) return nivel[1];
+   if (imc < 18.5) return nivel[0];
 }
 
 function calculoImc(){
@@ -19,7 +15,7 @@ function calculoImc(){
 
    let imc;
 
-   function recebeEventoForm(evento){
+   imcInput.addEventListener("submit", function (evento){
       evento.preventDefault();
 
       const inputPeso = imcInput.querySelector(".peso");
@@ -31,20 +27,19 @@ function calculoImc(){
       imc = peso / altura**2;
 
       if (!altura || altura <= 0.50 || altura >= 2.80) {
-         resultado.innerHTML += `<p>Altura invalida!</p>`
+         resultado.innerHTML = `<p>Altura invalida!</p>`
          return;
       }
       else if (!peso || peso <= 2.5 || peso >= 600 ) {
-         resultado.innerHTML += `<p>Peso invalida!</p>`
+         resultado.innerHTML = `<p>Peso invalida!</p>`
          return;
       }
       else{
          console.log(imc);
-
-         resultado.innerHTML += `<p>O seu IMC é ${imc} ${retornaFrase(imc)}</p>`
+         resultado.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)} ${retornaFrase(imc)}</p>`
+         return;
       }
-   }
-   imcInput.addEventListener("submit", recebeEventoForm);
+   });
 }
 
 calculoImc();
