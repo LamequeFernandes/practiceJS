@@ -1,0 +1,41 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: rgb(185, 185, 185);
+}
+div#principal {
+    background: rgb(140, 140, 195);
+    width: 700px;
+    height: 500px;
+    flex-direction: row;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+input#ano {
+    border-radius: 5px;
+}
+h1 {
+    font: bold 18pt Monospace;
+}
+div#p1, div#p2 {
+    font: normal 15pt Arial;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#botao_verificar {
+    font: normal 15pt Arial;
+    border-radius: 7px;
+}
+div#resultado { 
+    font: normal 15pt Arial;
+    padding-top: 30px;
+}
+img#imagem-pessoas {
+    padding-top: 15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 180px;
+}
