@@ -24,7 +24,8 @@ function click_fem() {
 
 function click_botao() {    
     var aux = Number(nascido.value)
-    var anoAtual = 2021
+    var data = new Date()
+    var anoAtual = data.getFullYear()
     var idade = anoAtual - aux
     
     if (idade < 1) {
@@ -46,7 +47,7 @@ function click_botao() {
         sexo == "masculino_selecionado" ? result.innerHTML = `Detectamos um adolecente de ${idade} anos.<br><img id="imagem-pessoas" src="./assets/img/garoto.jpg"/>` : result.innerHTML = `Detectamos uma adolecente de ${idade} anos. <br><img id="imagem-pessoas" src="./assets/img/garota.jpg"/>`
     }
     else {
-        sexo == "masculino_selecionado" ? result.innerHTML = `Detectamos uma criança de ${idade} anos. <br><img id="imagem-pessoas" src="./assets/img/menino.jpg"/>` : result.innerHTML = `DDetectamos uma criança de ${idade} anos. <br><img id="imagem-pessoas" src="./assets/img/menina.jpg"/>`
+        sexo == "masculino_selecionado" ? result.innerHTML = `Detectamos uma criança de ${idade} anos. <br><img id="imagem-pessoas" src="./assets/img/menino.jpg"/>` : result.innerHTML = `Detectamos uma criança de ${idade} anos. <br><img id="imagem-pessoas" src="./assets/img/menina.jpg"/>`
     }
 }
 

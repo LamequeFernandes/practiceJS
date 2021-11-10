@@ -5,13 +5,20 @@ body, html {
 body {
     background: rgb(185, 185, 185);
 }
-div#principal {
+
+header {
+    text-align: center;
+}
+
+#principal {
     background: rgb(140, 140, 195);
     width: 700px;
     height: 500px;
     flex-direction: row;
     border-radius: 10px;
     padding-left: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
 }
 input#ano {
     border-radius: 5px;
@@ -19,7 +26,7 @@ input#ano {
 h1 {
     font: bold 18pt Monospace;
 }
-div#p1, div#p2 {
+div#campos {
     font: normal 15pt Arial;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -32,10 +39,15 @@ div#p1, div#p2 {
 div#resultado { 
     font: normal 15pt Arial;
     padding-top: 30px;
+    margin: auto;
 }
 img#imagem-pessoas {
     padding-top: 15px;
     width: 220px;
     height: 220px;
     border-radius: 180px;
+}
+
+footer {
+    text-align: center;
 }

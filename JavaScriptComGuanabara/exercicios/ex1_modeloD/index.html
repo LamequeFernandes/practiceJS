@@ -10,22 +10,32 @@
 </head>
 
 <body>
-    <center>
+    <header>
         <h1>Verificador de Idade</h1>
-    </center>
+    </header>
 
+    <section id="principal">
+        <div id="campos">
 
-        <div id="principal">
-            <div id="p1">Ano de Nascimento: </div>
-            <input type="number" id="ano">
-            <div id="p2">Sexo: 
-                <input type="radio" name="sexo" id="masculino"> Masculino
-                <input type="radio" name="sexo" id="feminino"> Feminino
-            </div>
-            <br>
+            <p>Ano de Nascimento:
+                <input type="number" id="ano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="masculino"> 
+                <label for="masculino">Masculino</label> 
+                <input type="radio" name="sexo" id="feminino"> 
+                <label for="feminino">Feminino</label>
+            </p>
             <input type="button" value="Verificar" id="botao_verificar">
-            <div id="resultado"></div>
+
         </div>
+
+        <div id="resultado"></div>
+    </section>
+
+    <footer>
+        <p>&copy; LamequeFernandes</p>
+    </footer>
 
 
     <script src="./assets/js/main.js"></script>
