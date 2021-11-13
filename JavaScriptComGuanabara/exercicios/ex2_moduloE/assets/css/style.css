@@ -1,0 +1,48 @@
+body {
+    background: rgba(0, 0, 139, 0.815);
+}
+header {
+    color: white;
+    text-align: center;
+    font: italic 16pt Arial;
+}
+#corpo {
+    background: white;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+#conteudo {
+    font: bold 15pt Arial;
+    width: 550px;
+    height: 75px;
+    margin: auto;
+    padding-top: 10px;
+}
+/*
+div#result {
+    width: 700px;
+    height: 350px;
+    background: yellow;
+}
+*/
+select#result{
+    font: normal 14pt Arial;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+#botao_gerar, #num {
+    font: normal 12pt Arial;
+    border-radius: 5px;
+}
+#num {
+    width: 100px;
+}
+footer {
+    font: italic 14pt Arial;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
