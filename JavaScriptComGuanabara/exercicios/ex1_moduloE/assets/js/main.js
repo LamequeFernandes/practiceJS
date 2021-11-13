@@ -12,7 +12,6 @@ function click_botao() {
     var num_fim = Number(t_fim.value);
     var num_passos = Number(t_passos.value);
 
-    var tagP = document.createElement('p')
 
     for (var i = num_inicio; i <= num_fim; i += num_passos) {
         div_result.innerHTML += `${i}  `
