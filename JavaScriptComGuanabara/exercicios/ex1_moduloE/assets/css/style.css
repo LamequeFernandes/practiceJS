@@ -1,0 +1,44 @@
+body {
+    background: rgb(56, 54, 54);
+}
+
+header#cabecalho {
+    text-align: center;
+    font: normal 14pt Arial;
+    color: white;
+}
+
+section#principal {
+    background: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+div#conteudo {
+    width: 475px;
+    height: 200px;
+    margin: auto;
+    padding-top: 10px;
+    font: normal 16pt Arial;
+}
+
+#botao_contar {
+    width: 80px;
+    height: 25px;
+    font-size: 13pt;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+div#result {
+    width: 475px;
+    height: 80px;
+    margin: auto;
+}
