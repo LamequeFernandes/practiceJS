@@ -1,0 +1,45 @@
+body {
+    background: burlywood;
+}
+header{
+    text-align: center;
+    color: black;
+}
+section#corpo {
+    width: 700px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    border-radius: 30px;
+}
+div#entrada {
+    font: normal 16pt Arial;
+    width: 650px;
+    height: 70px;
+    margin: auto;
+    padding-top: 10px;
+}
+#botao-adicionar, #botao-finalizar {
+    font: normal 14pt Arial;
+    border-radius: 5px;
+}
+#num {
+    width: 200px;
+    height: 20px;
+    font: normal 14pt Arial;
+}
+select#numeros {
+    font: normal 14pt Arial;
+}
+div#array {
+    padding-left: 25px;
+}
+div#saida {
+    width: 700px;
+    height: 200px;
+}
+footer {    
+    padding-top: 15px;
+    text-align: center;
+    font-size: 16pt;
+}
