@@ -19,29 +19,8 @@ function adiciona_na_lista () {
     } else {
         window.alert('Digite um número entre 1 e 100!')
     }
-}
-
-function resultados () {
-    if (lista_numeros.length == 0)
-        return window.alert("Digite um número entre 1 e 100!")
-    lista_numeros.sort()
-
-    let qnt_numeros = document.createElement('p')
-    qnt_numeros.text = `Ao todo, temos ${lista_numeros.length} cadastrados.`
-
-    let maior = document.createElement('p')
-    maior.text = `O maior valor adicionado foi o ${lista_numeros[lista_numeros.length - 1]}.`
-
-    let soma_total = document.createElement('p')
-    soma_total.text = `Somando toso os valores, temos ${soma_array(lista_numeros)}`
-
-    let media = document.createElement('p')
-    media.text = `A média dos valores digitados é ${soma_array(lista_numeros)/lista_numeros.length}`
-
-    resultado.appendChild(qnt_numeros)
-    resultado.appendChild(maior)
-    resultado.appendChild(soma_total)
-    resultado.appendChild(media)
+    t_num.value = ``
+    t_num.focus()
 }
 
 function soma_array (lista) {
@@ -51,4 +30,23 @@ function soma_array (lista) {
     }
     if (result != 0)
         return result
+}
+
+function resultados () {
+    if (lista_numeros.length == 0)
+        return window.alert("Digite um número entre 1 e 100!")
+
+    lista_numeros.sort()
+    let qnt_numeros = `<p>Ao todo, temos ${lista_numeros.length} cadastrados.</p>`
+    let menor = `<p>O menor valor adicionado foi o ${lista_numeros[0]}.</p>`
+    let maior = `<p>O maior valor adicionado foi o ${lista_numeros[lista_numeros.length - 1]}.</p>`
+    let soma_total = `<p>Somando toso os valores, temos ${soma_array(lista_numeros)}</p>`
+    let media = `<p>A média dos valores digitados é ${soma_array(lista_numeros)/lista_numeros.length}</p>`
+ 
+    resultado.innerHTML = ''    
+    resultado.innerHTML += qnt_numeros
+    resultado.innerHTML += menor
+    resultado.innerHTML += maior
+    resultado.innerHTML += soma_total
+    resultado.innerHTML += media
 }

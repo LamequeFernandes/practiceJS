@@ -7,17 +7,14 @@ header{
 }
 section#corpo {
     width: 700px;
-    height: 700px;
     background: white;
     margin: auto;
     border-radius: 30px;
+    padding: 15px;
 }
 div#entrada {
     font: normal 16pt Arial;
-    width: 650px;
-    height: 70px;
     margin: auto;
-    padding-top: 10px;
 }
 #botao-adicionar, #botao-finalizar {
     font: normal 14pt Arial;
@@ -30,16 +27,13 @@ div#entrada {
 }
 select#numeros {
     font: normal 14pt Arial;
-}
-div#array {
-    padding-left: 25px;
-}
-div#saida {
-    width: 700px;
-    height: 450px;
+    width: 250px;
 }
 footer {    
     padding-top: 15px;
     text-align: center;
     font-size: 16pt;
+}
+div#saida {
+    font: normal 14pt Arial;
 }
