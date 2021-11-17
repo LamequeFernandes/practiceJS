@@ -7,7 +7,7 @@ header{
 }
 section#corpo {
     width: 700px;
-    height: 500px;
+    height: 700px;
     background: white;
     margin: auto;
     border-radius: 30px;
@@ -36,7 +36,7 @@ div#array {
 }
 div#saida {
     width: 700px;
-    height: 200px;
+    height: 450px;
 }
 footer {    
     padding-top: 15px;
